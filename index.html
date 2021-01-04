@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokument</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body onload="myFunction()">
+<section>
+<div id="logowanie">
+    <div id="error-box"></div>
+    <div id="success-box"></div>
+
+    <div id="signed-out-content">
+    <form id="sign-in-form">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+        <label for="password">Hasło</label>
+        <input type="password" id="password" name="password" required />
+        <input type="submit" value="Zaloguj/Zarejestruj" />
+    </form>
+    <button id="sign-in-google">Zaloguj się przez google</button>
+
+</div>
+
+    <div id="signed-in-content">
+        <h6>Witaj na stronie z dostępem dla limitowanych użytkowników</h6>
+
+        <button id="sign-out-button">Wyloguj</button>
+        <p><a href="plik.txt" download>Tajna Wiadomość.txt</a>
+        </p>
+        <div id="inwebsite">
+            <div class="container">
+                <div class="text"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyAJOLBpJ8xFRcdhXoRyHzVW7AHIONDd_xI",
+    authDomain: "swapper-logs.firebaseapp.com",
+    projectId: "swapper-logs",
+    storageBucket: "swapper-logs.appspot.com",
+    messagingSenderId: "771869295923",
+    appId: "1:771869295923:web:09aa67844fb7d6d3fa6a46",
+    measurementId: "G-RF2PWYDV2Z"
+  };
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src="textAnim.js"></script>
+    <script src="skript.js"></script>
+</body>
+</html>

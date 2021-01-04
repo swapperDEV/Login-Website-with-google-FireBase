@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+#error-box {
+    background: rgb(255,54, 54);
+    color: white;
+}
+#success-box {
+    background: lightgreen;
+    color: white;
+}
+section {
+    width: 100vw;
+    height: 100vh;
+    background-color: #555;
+    display: none;
+}
+#logowanie {
+    position: absolute;
+    background-color: wheat;
+    overflow: hidden;
+    left: 3%;
+    top: 3%;
+    padding: 25px;
+    border: 3px solid wheat;
+    border-radius: 40px;
+
+}
+
+.container {
+    height: 10vh;
+    width: 20vw;
+    justify-content: center;
+    align-items: center;
+    display: flex}
+  .text {
+    font-weight: 100;
+    padding-left: 200px;
+    font-size: 28px;
+    color: #FAFAFA}
+  .dud {
+    color: #757575}
+
+#inwebsite {
+    position: fixed;
+    top: 10%;
+    right: 10%;
+    transform: translate(-10%, -10%)
+}
